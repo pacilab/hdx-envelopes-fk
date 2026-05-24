@@ -4,7 +4,7 @@ hdx_env — Simulation of HDX conformational dynamics and uptake envelopes.
 Reference
 ---------
 A. Grimaldi, E. Paci (2026).
-    How conformational dynamics shapes hydrogen--deuterium exchange
+    How conformational dynamics shape hydrogen--deuterium exchange
     isotopic envelopes.
 
 Four reduced descriptions of conformational dynamics are implemented, all of
@@ -53,7 +53,7 @@ def _all_subsets(P):
 
 def uptake_from_survivals(P, psi_X):
     """Probability distribution of the peptide uptake n_P(t) from the family
-    {ψ_X(t)}_{X ⊆ P}, using eq. (B13):
+    {ψ_X(t)}_{X ⊆ P}, using eq. (C10):
 
         P(n_P = n, t) = Σ_{X⊆P, |X|≥|P|-n} (-1)^(|X|-|P|+n) C(|X|,|P|-n) ψ_X(t)
 
@@ -279,7 +279,7 @@ class ConcertedSwitching:
     # ---- observables ---------------------------------------------------
     def psi_X(self, X, t):
         """
-        Uses the scalar map eq. (C39): kint_X = Σ_{i∈X} k_int_i.
+        Uses the scalar map eq. (E11): kint_X = Σ_{i∈X} k_int_i.
         """
         X = tuple(sorted(X))
         if len(X) == 0:
@@ -314,7 +314,7 @@ class MetastableBasins:
     the basin-resolved open fraction π^(b)_i is provided. The coarse-grained
     dynamics is a Markov chain on basin labels with optional rate matrix
     W_basin (B, B). If W_basin is None, basins are frozen (no interbasin
-    transitions during the labelling interval, eq. C51).
+    transitions during the labelling interval, eq. E23).
     """
 
     name = "basins"
@@ -382,7 +382,7 @@ class MetastableBasins:
         nP = len(P)
         nT = len(t)
         if self.L_basin is None:
-            # Closed-form mixture of uncoupled residues distributions (eq. C53)
+            # Closed-form mixture of uncoupled residues distributions (eq. E24)
             out = np.zeros((nT, nP + 1))
             for b in range(self.B):
                 dist = np.ones((nT, 1))
