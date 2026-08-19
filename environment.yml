@@ -1,0 +1,21 @@
+# Conda environment for hdx-envelopes-fk.
+#
+#   conda env create -f environment.yml
+#   conda activate hdxenv
+#
+# Version floors are deliberately loose. The figures in the paper were produced
+# with python 3.11.15, numpy 2.4.4, scipy 1.17.1, matplotlib 3.10.8, pandas 3.0.2.
+
+name: hdxenv
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python >=3.10,<3.13
+  - numpy >=1.24          # arrays throughout
+  - scipy >=1.10          # scipy.linalg.null_space, for FullMarkov steady states
+  - matplotlib >=3.7      # figures
+  - pandas >=2.0          # python/kint tabular rate output
+  - jupyterlab >=4.0      # to run notebooks/
+  - ipykernel >=6.0       # registers the `hdxenv` kernel
