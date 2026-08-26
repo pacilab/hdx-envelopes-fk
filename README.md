@@ -105,7 +105,7 @@ the multivariate generating function.
 > 2493–2500. doi:[10.1021/acs.jpcb.5c06636](https://doi.org/10.1021/acs.jpcb.5c06636)
 >
 > That is a separate citation from the paper accompanying this repository; if you use
-> both, please cite both. See [https://github.com/pacilab/hdx-rates-mixtures/blob/main/README.md](https://github.com/pacilab/hdx-rates-mixtures/blob/main/README.md).
+> both, please cite both. See [https://github.com/pacilab/hdx-rates-mixtures](https://github.com/pacilab/hdx-rates-mixtures).
 
 ```bash
 cd python/kint
