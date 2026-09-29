@@ -4,9 +4,21 @@ Simulation of hydrogen–deuterium exchange (HDX–MS) isotopic envelopes from r
 models of conformational dynamics.
 
 Companion code for:
+> A. Grimaldi and E. Paci, "How conformational dynamics shape hydrogen–deuterium
+> exchange isotopic envelopes," *J. Chem. Phys.* **165**, 124106 (2026).
+> doi:[10.1063/5.0347532](https://doi.org/10.1063/5.0347532)
 
-> A. Grimaldi and E. Paci, *How conformational dynamics shape hydrogen–deuterium
-> exchange isotopic envelopes* (2026).
+```bibtex
+@article{grimaldi2026envelopes,
+  author  = {Grimaldi, Antonio and Paci, Emanuele},
+  title   = {How conformational dynamics shape hydrogen--deuterium exchange isotopic envelopes},
+  journal = {The Journal of Chemical Physics},
+  volume  = {165},
+  pages   = {124106},
+  year    = {2026},
+  doi     = {10.1063/5.0347532}
+}
+```
 
 ## What it does
 
