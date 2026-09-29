@@ -14,9 +14,11 @@ Companion code for:
   title   = {How conformational dynamics shape hydrogen--deuterium exchange isotopic envelopes},
   journal = {The Journal of Chemical Physics},
   volume  = {165},
+  number  = {12},
   pages   = {124106},
   year    = {2026},
-  doi     = {10.1063/5.0347532}
+  publisher={AIP Publishing},
+  doi = {https://doi.org/10.1063/5.0347532}
 }
 ```
 
